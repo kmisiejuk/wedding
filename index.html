@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./dist/img/logo.svg" type="image/x-icon">
+    <title>Magia Chwil</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+
+<body>
+    <nav class="nav">
+    <div class="nav__items">
+        <img src="./dist/img/logo.svg" alt="logo" class="logo">
+        <a href="#home" class="nav__item btn">Home</a>
+        <a href="#about-us" class="nav__item btn">O nas</a>
+        <a href="#oferts" class="nav__item btn">Oferta</a>
+        <a href="#contact" class="nav__item btn">Kontakt</a>
+
+    </div>
+    <button class="burger-btn">
+        <div class="burger-btn__bars"></div>
+    </button>
+</nav>
+    <header class="header" id="home">
+    <h1>Magia Chwil</h1>
+
+    <a href="#about-us"><button class="header__btn">
+     Dowiedz się więcej
+    </button></a>
+</header>
+    <div class="wrapper main" id="main">
+    <section class="instructions" id="about-us">
+        <h2 class="section__heading">Jak działamy?</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+    </section>
+
+    <section class="oferts" id="oferts">
+        <h2 class="section__heading">Nasze pakiety</h2>
+        <p>Pakiet standard</p>
+        <p>pakiet premium</p>
+        <p>pakiet deluxe</p>
+    </section>
+
+    <!-- <form action="/submit_form.php" method="post"> -->
+<section class="section contact wrapper" id="contact">
+    <h2 class="form__heading section__heading">Skontaktuj się z nami</h2>
+    <form action="" class="form ">
+
+        <input class="form__input form__spacer" type="text" id="name" name="name" placeholder="Imię" required>
+
+        <input class="form__input form__spacer" type="email" id="email" name="email" placeholder="E-mail" required>
+        <input class="form__input form__spacer" type="number" id="phone" name="phone" pattern="/^-?\d+\.?\d*$/"
+            placeholder="Numer kontaktowy" required>
+
+        <textarea class="form__message form__spacer form__input" id="message" name="message"
+            placeholder="Napisz wiadomość" required></textarea>
+        <input class="btn form__submit form__spacer" type="submit" value="Wyślij">
+    </form>
+
+    <div class="contact__message-status">
+        <img class="contact__message-status-icon" src="/dist/img/send-white.svg" alt="icon message forward">
+        <p class="contact__message-status-info">Twoja wiadomość została wysłana</p>
+
+    </div>
+</section>
+
+</div>
+    <footer class="footer"> 
+    <div class="footer__container">
+      
+        <a href="https://www.instagram.com" target="_blank" class="footer__icon-box">
+          <img src="./dist/img/brand-instagram.svg" alt="insatgram-logo" class="footer__info-icon"><span class="space"> @magicznechwile</span>
+        </a>
+  
+      <a href="https://www.facebook.com" target="_blank" class="footer__icon-box">
+        <img src="./dist/img/brand-facebook.svg" alt="facebook logo" class="footer__info-icon"> <span>magiczne_chwile</span>
+      </a>
+
+      <a href="" target="_blank" class="footer__icon-box">
+        <img src="./dist/img/mail.svg" alt="mail icon" class="footer__info-icon"> <span>kontakt@magicznechwile.com</span>
+      </a>
+
+      <a href="" target="_blank" class="footer__icon-box">
+        <img src="./dist/img/phone.svg" alt="phone icon" class="footer__info-icon"> <span>+48 123 456 789</span>
+      </a>
+    </div>
+
+    <div class="footer__logo">
+        <img src="./dist/img/logo_blue.svg" alt="company logo" class="footer__logo-icon">
+    </div>
+    <p class="footer__company-name">&copy; <span class="footer__company-name-year" id="footer__year"> </span> Magia
+        Chwil</p>
+</footer>
+
+    <script src="dist/js/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
