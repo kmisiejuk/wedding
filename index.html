@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./dist/img/logo.svg" type="image/x-icon">
     <title>Magia Chwil</title>
-
-
     <link rel="stylesheet" href="dist/css/style.min.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
@@ -48,7 +45,7 @@
             <img src="./dist/img/step_1.jpg" alt="kod QR">
           </div>
           <ul class="step__content-list">
-            <li>Lorem ipsum dolor sit amet.</li>
+            <li><a href="./mobilepage.html">mobile page</a></li>
             <li>Lorem ipsum dolor sit amet</li>
             <li>Lorem ipsum dolor sit amet</li>
             <li>Lorem ipsum dolor sit amet</li>
@@ -110,12 +107,14 @@
   <section class="patterns">
 
     <h3 class="section__subheading">Wybrierz wygląd swojej galerii</h3>
-    <div class="swiper">
+    <div class=" main__swiper swiper">
       <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper" style="--swiper-theme-color: #050505">
         <!-- Slides -->
+
         <div class="swiper-slide"><img src="./dist/img/pattern_1.jpg" alt="1. background-pattern our website"></div>
-        <div class="swiper-slide"><img src="./dist/img/pattern_2.jpg" alt="2. background-pattern our website"></div>
+        <div class="swiper-slide"><a href="/mobilepage.html" target="_blank"><img src="./dist/img/pattern_2.jpg"
+              alt="2. background-pattern our website"></a></div>
         <div class="swiper-slide"><img src="./dist/img/pattern_3.jpg" alt="3. background-pattern our website"></div>
         <div class="swiper-slide"><img src="./dist/img/pattern_4.jpg" alt="4. background-pattern our website"></div>
         <div class="swiper-slide"><img src="./dist/img/pattern_5.jpg" alt="5. background-pattern our website"></div>
@@ -124,7 +123,9 @@
         <div class="swiper-slide"><img src="./dist/img/pattern_8.jpg" alt="8. background-pattern our website"></div>
         <div class="swiper-slide"><img src="./dist/img/pattern_9.jpg" alt="9. background-pattern our website"></div>
       </div>
-    </div>
+      <div class="swiper-pagination" style="color: #505050;"></div>
+      <div class="swiper-button-prev" style="color: #505050;"></div>
+      <div class="swiper-button-next" style="color: #505050;"></div>
   </section>
 
 
@@ -211,31 +212,32 @@
 </section>
 
 </div>
-    <footer class="footer"> 
-    <div class="footer__container">
-      
-        <a href="https://www.instagram.com/magiachwil.brand/" target="_blank" class="footer__icon-box">
-          <img src="./dist/img/brand-instagram.svg" alt="insatgram-logo" class="footer__info-icon"><span class="space"> @magiachwil.brand</span>
-        </a>
-  
-      <a href="https://www.facebook.com/profile.php?id=61555304534951" target="_blank" class="footer__icon-box">
-        <img src="./dist/img/brand-facebook.svg" alt="facebook logo" class="footer__info-icon"> <span>magia_chwil</span>
-      </a>
+    <footer class="footer">
+  <div class="footer__container">
 
-      <a href="" target="_blank" class="footer__icon-box">
-        <img src="./dist/img/mail.svg" alt="mail icon" class="footer__info-icon"> <span>kontakt@magiachwil.com</span>
-      </a>
+    <a href="https://www.instagram.com/magiachwil.brand/" target="_blank" class="footer__icon-box">
+      <img src="./dist/img/brand-instagram.svg" alt="insatgram-logo" class="footer__info-icon"><span class="space">
+        @magiachwil.brand</span>
+    </a>
 
-      <a href="" target="_blank" class="footer__icon-box">
-        <img src="./dist/img/phone.svg" alt="phone icon" class="footer__info-icon"> <span>+48 123 456 789</span>
-      </a>
-    </div>
+    <a href="https://www.facebook.com/profile.php?id=61555304534951" target="_blank" class="footer__icon-box">
+      <img src="./dist/img/brand-facebook.svg" alt="facebook logo" class="footer__info-icon"> <span>magia_chwil</span>
+    </a>
 
-    <div class="footer__logo">
-        <img src="./dist/img/logo_blue.svg" alt="company logo" class="footer__logo-icon">
-    </div>
-    <p class="footer__company-name">&copy; <span class="footer__company-name-year" id="footer__year"> </span> Magia
-        Chwil</p>
+    <a href="#contact" class="footer__icon-box">
+      <img src="./dist/img/mail.svg" alt="mail icon" class="footer__info-icon"> <span>kontakt@magiachwil.com</span>
+    </a>
+
+    <a href="#contact" class="footer__icon-box">
+      <img src="./dist/img/phone.svg" alt="phone icon" class="footer__info-icon"> <span>+48 123 456 789</span>
+    </a>
+  </div>
+
+  <div class="footer__logo">
+    <img src="./dist/img/logo_blue.svg" alt="company logo" class="footer__logo-icon">
+  </div>
+  <p class="footer__company-name">&copy; <span class="footer__company-name-year" id="footer__year"> </span> Magia
+    Chwil</p>
 </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
