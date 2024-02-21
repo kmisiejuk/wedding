@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./dist/img/logo.svg" type="image/x-icon">
+    <title>Magia chwil wzór 7</title>
+    <link rel="stylesheet" href="dist\css\pattern7.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+
+<body>
+    <section class="pattern">
+        <div class="pattern__header">
+            <p class="pattern__date">10 lat</p>
+            <p class="pattern__name">Vistamind</p>
+            <div class="pattern__logo">
+                <img src="./dist/img/pattern7-logo.jpg" alt="logo firmy vistamind">
+            </div>
+        </div>
+        <div class="button-box">
+    <button aria-label="Pokaż informację" class="pattern__btn button" id="infoBtn">Informacje</button>
+    <button aria-label="Pokaż harmonogram" class="pattern__btn button" id="scheduleBtn">Harmonogram</button>
+</div>
+<form class="pattern__form" id="uploadForm" enctype="multipart/form-data">
+    <input type="file" name="fileToUpload" id="fileToUpload" multiple required>
+    <input type="submit" value="Prześlij">
+</form>
+<a href="#gallery">
+    <button aria-label="Otwórz galerie zdjęć" class="button" id="showGallerybtn">Rozwiń galerie</button>
+</a>
+    </section>
+
+    <div class="modal__confirm" id="confrimModal">
+    <p class="modal__confirm-info">Galeria zdjęć została zaktualizowana</p>
+</div>
+    <div class="info">
+    <div class="info__btn-close close-btn">&#x2715;</div>
+    <h2 class="info__header">Informacje dla gości</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio nemo aperiam, sunt minima molestias hic, dolor
+        a cupiditate, quisquam magnam reprehenderit sit eligendi. Iusto voluptatem voluptas autem sunt dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio nemo aperiam, sunt minima molestias hic, dolor
+        a cupiditate, quisquam magnam reprehenderit sit eligendi. Iusto voluptatem voluptas autem sunt dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio nemo aperiam, sunt minima molestias hic, dolor
+        a cupiditate, quisquam magnam reprehenderit sit eligendi. Iusto voluptatem voluptas autem sunt dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio nemo aperiam, sunt minima molestias hic, dolor
+        a cupiditate, quisquam magnam reprehenderit sit eligendi. Iusto voluptatem voluptas autem sunt dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio nemo aperiam, sunt minima molestias hic, dolor
+        a cupiditate, quisquam magnam reprehenderit sit eligendi. Iusto voluptatem voluptas autem sunt dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio nemo aperiam, sunt minima molestias hic, dolor
+        a cupiditate, quisquam magnam reprehenderit sit eligendi. Iusto voluptatem voluptas autem sunt dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio nemo aperiam, sunt minima molestias hic, dolor
+        a cupiditate, quisquam magnam reprehenderit sit eligendi. Iusto voluptatem voluptas autem sunt dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio nemo aperiam, sunt minima molestias hic, dolor
+        a cupiditate, quisquam magnam reprehenderit sit eligendi. Iusto voluptatem voluptas autem sunt dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio nemo aperiam, sunt minima molestias hic, dolor
+        a cupiditate, quisquam magnam reprehenderit sit eligendi. Iusto voluptatem voluptas autem sunt dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio nemo aperiam, sunt minima molestias hic, dolor
+        a cupiditate, quisquam magnam reprehenderit sit eligendi. Iusto voluptatem voluptas autem sunt dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio nemo aperiam, sunt minima molestias hic, dolor
+        a cupiditate, quisquam magnam reprehenderit sit eligendi. Iusto voluptatem voluptas autem sunt dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio nemo aperiam, sunt minima molestias hic, dolor
+        a cupiditate, quisquam magnam reprehenderit sit eligendi. Iusto voluptatem voluptas autem sunt dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio nemo aperiam, sunt minima molestias hic, dolor
+        a cupiditate, quisquam magnam reprehenderit sit eligendi. Iusto voluptatem voluptas autem sunt dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio nemo aperiam, sunt minima molestias hic, dolor
+        a cupiditate, quisquam magnam reprehenderit sit eligendi. Iusto voluptatem voluptas autem sunt dolorum.</p>
+</div>
+<div class="schedule">
+    <div class="schedule__btn-close close-btn">&#x2715;</div>
+    <h2 class="schedule__header">Harmonogram wesela</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint explicabo distinctio ut eligendi! Numquam deserunt
+        quos quia, impedit asperiores nulla et voluptatum, expedita magni officiis aperiam mollitia culpa, nisi
+        repellat.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint explicabo distinctio ut eligendi! Numquam deserunt
+        quos quia, impedit asperiores nulla et voluptatum, expedita magni officiis aperiam mollitia culpa, nisi
+        repellat.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint explicabo distinctio ut eligendi! Numquam deserunt
+        quos quia, impedit asperiores nulla et voluptatum, expedita magni officiis aperiam mollitia culpa, nisi
+        repellat.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint explicabo distinctio ut eligendi! Numquam deserunt
+        quos quia, impedit asperiores nulla et voluptatum, expedita magni officiis aperiam mollitia culpa, nisi
+        repellat.</p>
+</div>
+    <section class="gallery" id="gallery">
+        <h2 class="gallery__header">Galeria</h2>
+        <p class="gallery__info">Twoja galeria jest pusta</p>
+        <button class="gallery__btn-download-all">Pobierz całą galerię</button>
+        <div class="gallery__thumbnails">
+
+                <ul class="gallery__thumbnails-list"></ul>
+        </div>
+</section>
+
+<div class="popup__gallery">
+        <div aria-label="Zamknij popup" class="popup__gallery-btn-close close-btn">&#x2715;</div>
+        <div class="swiper popup__swiper">
+                <div class="popup__swiper-wrapper">
+                        <button aria-label="poprzednie zdjęcie" class="prev-img-btn img-btn"><img
+                                        src="./dist/img/arrow-left.svg" alt=""></button>
+                        <button aria-label="nastepne zdjęcie" class="next-img-btn img-btn"><img
+                                        src="./dist/img/arrow-right.svg" alt=""></button>
+                </div>
+                <div class="tools-btn-box">
+                        <button class="tool-btn download-btn"><img src="./dist/img/download-white.svg" alt=""></button>
+                        <!-- <button class="tool-btn delete-btn"><img src="./dist/img/trash-white-icon.svg" alt=""></button> -->
+                </div>
+        </div>
+        <!-- <div thumbsSlider="" class="thumbs__swiper">
+                <div class="thumbs__swiper-wrapper"></div>
+        </div> -->
+</div>
+
+    <script src="dist\js\gallery.min.js"></script>
+    <script type="module" src="dist/js/popups.min.js"></script>
+</body>
+
+</html>
