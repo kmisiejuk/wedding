@@ -45,7 +45,8 @@
             <img src="./dist/img/step_1.jpg" alt="kod QR">
           </div>
           <ul class="step__content-list">
-            <li>Lorem ipsum</li>
+           <a href="./guestForm.html"> <li>Formularz dla gości</li></a>
+           <a href="./marigePage.html"> <li>Strona nowożeńców</li></a>
             <li>Lorem ipsum dolor sit amet</li>
             <li>Lorem ipsum dolor sit amet</li>
             <li>Lorem ipsum dolor sit amet</li>
@@ -199,7 +200,7 @@
   <!-- <form action="/submit_form.php" method="post"> -->
 <section class="section contact wrapper" id="contact">
     <h2 class="form__heading section__heading">Skontaktuj się z nami</h2>
-    <form action="" class="form ">
+    <form action="" class="form" id="mainForm">
 
         <input class="form__input form__spacer" type="text" id="name" name="name" placeholder="Imię" required>
 
@@ -211,11 +212,43 @@
             placeholder="Napisz wiadomość" required></textarea>
         <input class="btn form__submit form__spacer" type="submit" value="Wyślij">
     </form>
+    <div class="contact__data">
+        <h4 class="contact__data-heading">Dane kontaktowe</h4>
+        <div class="contact__data-box">
+            <div class="contact__data-box-item">
+                <img src="./dist/img/mail-white.svg" class="contact__data-icon" alt="ikona koperty">
+                <p class="contact__data-item">kontakt@magiachwil.com</p>
+            </div>
+            <div class="contact__data-box-item">
+                <img src="./dist/img/phone-white.svg" class="contact__data-icon" alt="ikona telefonu">
+                <p class="contact__data-item">123 456 789</p>
+            </div>
+
+            <div class="contact__data-box-item">
+                <img src="./dist/img/home-white.svg" class="contact__data-icon" alt="ikona domu">
+                <p class="contact__data-item">ul. Zamkowa 100 82-200 Malbork</p>
+            </div>
+
+        </div>
+        <p class="contact__data-item contact__data-social-header">nasze social media</p>
+        <div class="contact__data-items">
+            <a href="https://www.instagram.com/magiachwil.brand/" target="_blank" class="contact__data-social btn">
+                <img src="./dist/img/instagram-white.svg" alt="insagram-logo" class="footer__info-icon"><span
+                    class="space">
+                    @magiachwil.brand</span>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61555304534951" target="_blank"
+                class="contact__data-social btn">
+                <img src="./dist/img/facebook-white.svg" alt="facebook logo" class="footer__info-icon">
+                <span>magia_chwil</span>
+            </a>
+        </div>
+    </div>
 
     <div class="contact__message-status">
         <img class="contact__message-status-icon" src="./dist/img/send-white.svg" alt="icon message forward">
         <p class="contact__message-status-info">Twoja wiadomość została wysłana</p>
-
     </div>
 </section>
 
@@ -232,12 +265,21 @@
       <img src="./dist/img/brand-facebook.svg" alt="facebook logo" class="footer__info-icon"> <span>magia_chwil</span>
     </a>
 
-    <a href="#contact" class="footer__icon-box">
+    <div class="footer__icon-box">
       <img src="./dist/img/mail.svg" alt="mail icon" class="footer__info-icon"> <span>kontakt@magiachwil.com</span>
-    </a>
+    </div>
 
-    <a href="#contact" class="footer__icon-box">
+    <div class="footer__icon-box">
       <img src="./dist/img/phone.svg" alt="phone icon" class="footer__info-icon"> <span>+48 123 456 789</span>
+    </div>
+  </div>
+
+  <div class="footer__terms">
+    <a href="#">
+      <p class="footer__terms-item">regulamin</p>
+    </a>
+    <a href="#">
+      <p class="footer__terms-item">polityka przywatności</p>
     </a>
   </div>
 
@@ -251,6 +293,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="dist/js/swiper.min.js"></script>
     <script src="dist/js/main.min.js"></script>
+    <script src="dist/js/mainform.min.js"></script>
 </body>
 
 </html>

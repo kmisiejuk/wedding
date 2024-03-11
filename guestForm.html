@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./dist/img/logo.svg" type="image/x-icon">
+    <title>Magia Chwil formularz dla gości</title>
+    <link rel="stylesheet" href="dist/css/guestForm.min.css">
+</head>
+
+<body>
+    <section class="section contact wrapper guestForm">
+        
+<a href="./index.html"  class="logo-small" target="_blank">
+        <div class="img"></div>
+</a>
+        <h2 class="form__heading section__heading form__guest-heading">Witajcie nasi goście!</h2>
+        <p class="form__info-guest">Prosimy Was o podanie ważnych informacji, które pomogą nam w organizacji wesela.</p>
+
+        <form action="/submit-form" class="form form__guest" id="guestForm">
+
+            <label class="checkbox-label" for="presence">Czy potwierdzacie swoją obecność na weselu? </label>
+
+            <div class="checkbox-group">
+                <label class="checkbox_ans-label" for="agree">Tak
+                    <input class="presence-agree" type="checkbox" id="agree" name="agreement" value="Tak" required
+                        onchange="handleCheck(presenceAgree, presenceDisagree)">
+                </label>
+                <label class="checkbox_ans-label" for="disagree">Nie
+                    <input class="presence-disagree" type="checkbox" id="disagree" name="agreement" value="Nie" required
+                        onchange="handleCheck(presenceAgree, presenceDisagree)">
+                </label>
+            </div>
+
+
+            <label class="label-qsa-text" for="name">Imię i Nazwisko:
+                <input class="form__input form__spacer input__text" type="text" id="name" name="name" required>
+            </label>
+
+            <label class="label-qsa-text" for="email">Wasz adres e-mail:
+                <input class="form__input form__spacer input__text" type="text" id="email" name="email">
+            </label>
+
+            <label class="label-qsa-text" for="phone">Wasz numer telefonu:
+                <input class="form__input form__spacer input__text" type="number" id="phone" name="phone"
+                    pattern="/^-?\d+\.?\d*$/\+" required>
+            </label>
+
+            <label class="checkbox-label" for="hotel">Czy potrzebujecie noclegu?
+            </label>
+            <div class="checkbox-group">
+                <label class="checkbox_ans-label" for="agreeHotel">Tak
+                    <input class="hotel" type="checkbox" id="agreeHotel" name="agreementHotel" value="Tak" required
+                        onchange="handleCheck(hotelAgree, hotelDisagree)">
+                </label>
+
+                <label class="checkbox_ans-label" for="disagreeHotel">Nie
+                    <input class="hotel" type="checkbox" id="disagreeHotel" name="agreementHotel" value="Nie" required
+                        onchange="handleCheck(hotelAgree, hotelDisagree)">
+                </label>
+            </div>
+
+            <label class="textarea-label" for="message">Jeśli macie do nas dodatkownie pytania lub chcecie przekazać nam
+                coś wiecej, napiszcie
+                to poniżej.
+                <textarea class="form__guest-message form__message form__spacer form__input" id="message" name="message"
+                    placeholder="Napisz wiadomość"></textarea>
+            </label>
+
+            <input class="btn form__submit form__spacer btn__form-guest" type="submit" value="Wyślij">
+        </form>
+        <div class="test"></div>
+
+        <div class="contact__message-status">
+            <img class="contact__message-status-icon" src="./dist/img/send-white.svg" alt="icon message forward">
+            <p class="contact__message-status-info">Dziękujemy za waszą wiadomość</p>
+        </div>
+
+    </section>
+    <footer class="footerSmall">
+
+    <div class="footerSmall__container">
+        <a href="./index.html" class="footerSmall__icon-box">
+            <img src="./dist/img/logo.svg" alt="phone icon" class="footerSmall__info-icon footerSmall__info-logo"> <span>Home</span>
+        </a>
+        <a href="https://www.instagram.com/magiachwil.brand/" target="_blank" class="footerSmall__icon-box">
+            <img src="./dist/img/brand-instagram.svg" alt="insatgram-logo" class="footerSmall__info-icon"><span
+                class="space">
+                @magiachwil.brand</span>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61555304534951" target="_blank" class="footerSmall__icon-box">
+            <img src="./dist/img/brand-facebook.svg" alt="facebook logo" class="footerSmall__info-icon">
+            <span>magia_chwil</span>
+        </a>
+
+        <p href="#contact" class="footerSmall__icon-box">
+            <img src="./dist/img/mail.svg" alt="mail icon" class="footerSmall__info-icon">
+            <span>kontakt@magiachwil.com</span>
+        </p>
+
+        <p href="#contact" class="footerSmall__icon-box">
+            <img src="./dist/img/phone.svg" alt="phone icon" class="footerSmall__info-icon"> <span>+48 123 456
+                789</span>
+        </p>
+        
+    </div>
+
+   
+    <div class="footer__company-name">&copy; <span class="footer__company-name-year" id="footerSmall__year"> </span> Magia
+        Chwil   <a class=""href="#polityka prywatności">Polityka Prywatności</a> <a class=""href="#regulamin">Regulamin</a></div>
+</footer>
+<script src="/dist/js/footerSmall.min.js"></script>
+    <script src="dist/js/form.min.js"></script>
+    <script src="dist/js/guestFrom.min.js"></script>
+</body>
+
+</html>
